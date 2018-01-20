@@ -3,4 +3,6 @@ Exploring machine learning basics by implementing a k-nearest neighbor classifie
 
 ## ToDo List
 
-3. Add drawing of pairwise decision boundaries
+1. Add second decision boundary plot
+2. CleanUp boundary plotting code
+3. CleanUp Notebook and later texts
