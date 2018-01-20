@@ -3,7 +3,5 @@ Exploring machine learning basics by implementing a k-nearest neighbor classifie
 
 ## ToDo List
 
-1. Update cell describing accuracy plot
-2. Replace Confusion Matrix with scikit-learn logic
 3. Add drawing of pairwise decision boundaries
 4. Check Introduction
