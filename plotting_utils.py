@@ -13,6 +13,7 @@ def line(x, **kwargs):
     for key in kwargs:
         plt.plot(x, kwargs[key], label=key)
     plt.legend()
+    plt.show()
 
 def confusion_matrix(C, k, labels):
     plt.imshow(C, interpolation='nearest')
@@ -23,11 +24,13 @@ def confusion_matrix(C, k, labels):
     plt.xticks(tick_marks, labels)
     plt.xlabel('Prediction')
     plt.colorbar()
+    plt.show()
 
 def scatter(x, y, c=None, xlabel=None, ylabel=None, **kwargs):
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.scatter(x, y, c=c, **kwargs)
+    plt.show()
 
 def _generate_plane(X, n):
     MeshH, MeshV = np.meshgrid(np.linspace(X.min(axis=0)[0],
@@ -43,3 +46,4 @@ def decision_boundary(X, y, clf, xlabel=None, ylabel=None, n=75):
     plt.ylabel(ylabel)
     plt.scatter(X_plane[:,0], X_plane[:,1], c=y_plane, marker=".", alpha=.6)
     plt.scatter(X[:,0], X[:,1], c=y, edgecolor="black")
+    plt.show()
